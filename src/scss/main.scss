@@ -1,0 +1,10 @@
+// base
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// page components
+@import "./components/header";
+@import "./components/hero";
+@import "./components/social";
