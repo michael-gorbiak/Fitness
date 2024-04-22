@@ -1,0 +1,162 @@
+.graph-modal {
+  background-color: transparent;
+}
+.custom {
+  border-radius: 0;
+}
+
+.modal {
+  width: 100%;
+  // display: none;
+
+  &--position {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    min-width: fit-content;
+    height: 100vh;
+    transition: width 1s;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    background: rgb(122 122 122 / 56%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.9px);
+    -webkit-backdrop-filter: blur(25px);
+    padding: 0;
+  }
+
+  &__header {
+    justify-content: space-between;
+    padding: 40px 65px;
+  }
+
+  &__person {
+  }
+
+  &__person-info {
+    padding: 0 65px;
+  }
+
+  &__person-container {
+    position: relative;
+    height: 200px;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/woman-workout-legs.jpg");
+      filter: blur(8px) contrast(0.6);
+      -webkit-filter: blur(4px);
+      background-position: 50% 80%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      margin-left: -65px;
+      margin-right: -65px;
+    }
+  }
+
+  &__person-info {
+    justify-content: space-between;
+  }
+
+  &__person-title {
+    margin: 0;
+    padding: 0 65px;
+    font-family: var(--title-family);
+    font-size: 58px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: var(--light-color);
+  }
+
+  &__person-period {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--light-color);
+    letter-spacing: 0.3px;
+  }
+
+  &__person-name {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--light-color);
+    letter-spacing: 0.3px;
+  }
+
+  &__list {
+    position: relative;
+    flex-direction: column;
+    margin-top: 35px;
+    padding-bottom: 20px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      right: -20px;
+      height: 1px;
+      // width: 100%;
+      background-color: #ffffff80;
+    }
+  }
+
+  &__groups-list {
+    flex-direction: column;
+  }
+
+  &__groups {
+    justify-content: space-between;
+  }
+
+  &__program {
+    flex-direction: column;
+    padding: 0 65px;
+  }
+
+  &__groups-list {
+    justify-content: space-between;
+  }
+
+  &__item-header {
+    margin-bottom: 35px;
+  }
+
+  &__item-title-top {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff80;
+    letter-spacing: 0.3px;
+  }
+
+  &__item-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--light-color);
+  }
+
+  &__groups-list__item {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 100;
+    color: #ffffff;
+    line-height: 26px;
+  }
+}

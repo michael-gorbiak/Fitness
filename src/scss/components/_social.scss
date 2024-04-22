@@ -2,6 +2,22 @@
   position: fixed;
   left: 40px;
   bottom: 40px;
+  opacity: 0;
+  animation: 1.5s ease-out 1s forwards 1 socialFromLeft;
+
+  @keyframes socialFromLeft {
+    0% {
+      left: -100px;
+      transform: translateX(-100%);
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
   &__list {
     flex-direction: column;

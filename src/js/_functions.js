@@ -2,10 +2,10 @@
 // It is recommended to create a separate file in the components folder and connect everything there
 
 // Determining the operating system on mobile devices
-import { mobileCheck } from "./functions/mobile-check";
-console.log(mobileCheck())
+// import { mobileCheck } from "./functions/mobile-check";
+// console.log(mobileCheck())
 
-// Defining Screen Width
+// Defining Screen WidthF
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
 // if (isDesktop()) {
 //   console.log('...')
@@ -30,8 +30,8 @@ console.log(mobileCheck())
 // import { enableScroll } from './functions/enable-scroll';
 
 // Implementing a modal window
-// import GraphModal from 'graph-modal';
-// const modal = new GraphModal();
+import GraphModal from "graph-modal";
+const modal = new GraphModal();
 
 // Implementation of tabs
 // import GraphTabs from 'graph-tabs';
